@@ -1,0 +1,4 @@
+query,start_time,end_time,end_id,filename
+#1May -filter:retweets,2019-05-01 20:12:46+00:00,2019-05-01 20:48:44+00:00,1123690740213796865,tweet_files/search_results_2019-05-01T20_48_44+00_00.txt
+#1May -filter:retweets,2019-05-01 20:12:46+00:00,2019-05-01 20:46:06+00:00,1123690079506128898,tweet_files/search_results_2019-05-01T20_46_06+00_00.txt
+#1May -filter:retweets,2019-05-01 20:12:46+00:00,2019-05-01 20:54:00+00:00,1123692067895500800,tweet_files/search_results_2019-05-01T20_54_00+00_00.txt
