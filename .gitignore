@@ -2,6 +2,9 @@
 # Created by https://www.gitignore.io/api/macos,jupyternotebook
 # Edit at https://www.gitignore.io/?templates=macos,jupyternotebook
 
+
+google-images-dataset/data
+
 ### JupyterNotebook ###
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
