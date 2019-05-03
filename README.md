@@ -35,7 +35,7 @@ The model presented in this repository can be used by protesters who are on the 
 
 Low sentiment values indicate a more negative sentiment, and changes in sentiment over time (blue line) were able to capture violence as reported by traditional (non-Twitter) media sources.
 
-**Image sentiment analysis:** The violenceClassifier notebook uses the trained resnet50 model to determine whether images are peaceful or violent. 
+**Image sentiment analysis:** The PeaceViolencePredictor notebook uses the trained resnet50 model to determine whether images are peaceful or violent. 
 
 ## Requirements
 ```python
