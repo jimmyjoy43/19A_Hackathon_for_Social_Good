@@ -86,7 +86,7 @@ def get_recent_tweets(search_term, time_period):
 
 
             if not new_tweets:
-                print('not_new_tweets')
+                
                 break
 
 

@@ -14,10 +14,10 @@ def score_sentiment(filename):
     text_analytics_base_url = "https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.1/"
 
     language_api_url = text_analytics_base_url + "languages"
-    print(language_api_url)
+    #print(language_api_url)
 
     sentiment_api_url = text_analytics_base_url + "sentiment"
-    print(sentiment_api_url)
+   # print(sentiment_api_url)
 
     
     #function to return tweet language and sentiment score     
@@ -136,5 +136,5 @@ def score_sentiment(filename):
     save_file = (save_path + str(filename) + 'sent.csv')
 
     tweets_with_sent.to_csv(save_file)
-    return final
+    return tweets_with_sent
 
