@@ -33,6 +33,8 @@ The folder *main_function_integration* contains a jupyter notebook *main.ipynb* 
   <img src="sentiment_time_series_plots/hourly/24Mayo.png">
 </p>
 
+Low sentiment values indicate a more negative sentiment, and changes in sentiment over time (blue line) were able to capture violence as reported by traditional (non-Twitter) media sources.
+
 [add "image classification how to" here]
 
 ## Requirements
