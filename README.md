@@ -9,14 +9,14 @@ Protesting is one such human right, and an important tool for inspiring positive
 
 ## How does it work?
 
-**Images:** For image classification, model weights from a resnet50 model were used to train on protest images in a training set, reaching 91% accuracy:
+**Image sentiment analysis:** For image classification, model weights from a resnet50 model were used to train on protest images in a training set, reaching 91% accuracy:
 
 <p align="center">
   <img src="cnn_model.png">
 </p>
 
 
-**Text:** Tweets were scraped and analyzed by Microsoft's [Sentiment Analysis API](https://westcentralus.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v2-1/operations/56f30ceeeda5650db055a3c9). With hourly averaged sentiment values and tweet count values, changes in sentiment can be detected.
+**Text sentiment analysis::** Tweets were scraped and analyzed by Microsoft's [Sentiment Analysis API](https://westcentralus.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v2-1/operations/56f30ceeeda5650db055a3c9). With hourly averaged sentiment values and tweet count values, changes in sentiment can be detected.
 
 Together, the CNN model and tweet data analysis can provide protesters with information about the sentiment associated with a protest and when it is starting to become very negative and the risk of violence increases.
 
