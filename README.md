@@ -9,14 +9,14 @@ Protesting is one such human right, and an important tool for inspiring positive
 
 ## How does it work?
 
-**Images:** For image classification, model weights from a resnet50 model were used to train on protest images in a training set, reaching 91% accuracy:
+**Image sentiment analysis:** For image classification, model weights from a resnet50 model were used to train on protest images in a training set, reaching 91% accuracy:
 
 <p align="center">
   <img src="cnn_model.png">
 </p>
 
 
-**Text:** Tweets were scraped and analyzed by Microsoft's [Sentiment Analysis API](https://westcentralus.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v2-1/operations/56f30ceeeda5650db055a3c9). With hourly averaged sentiment values and tweet count values, changes in sentiment can be detected.
+**Text sentiment analysis::** Tweets were scraped and analyzed by Microsoft's [Sentiment Analysis API](https://westcentralus.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v2-1/operations/56f30ceeeda5650db055a3c9). With hourly averaged sentiment values and tweet count values, changes in sentiment can be detected.
 
 Together, the CNN model and tweet data analysis can provide protesters with information about the sentiment associated with a protest and when it is starting to become very negative and the risk of violence increases.
 
@@ -27,7 +27,7 @@ The model presented in this repository can be used by protesters who are on the 
 
 ## Usage
 
-The folder *main_function_integration* contains a jupyter notebook *main.ipynb* that gets tweets and runs sentiment analysis to generate a plot:
+**Text sentiment analysis:** The folder *main_function_integration* contains a jupyter notebook *main.ipynb* that gets tweets and runs sentiment analysis to generate a plot:
 
 <p align="center">
   <img src="sentiment_time_series_plots/hourly/24Mayo.png">
@@ -35,7 +35,7 @@ The folder *main_function_integration* contains a jupyter notebook *main.ipynb* 
 
 Low sentiment values indicate a more negative sentiment, and changes in sentiment over time (blue line) were able to capture violence as reported by traditional (non-Twitter) media sources.
 
-[add "image classification how to" here]
+**Image sentiment analysis:** The PeaceViolencePredictor notebook uses the trained resnet50 model to determine whether images are peaceful or violent. 
 
 ## Requirements
 ```python
@@ -50,10 +50,16 @@ gnu parallel (>= version 20160822)
 Important files for users:
 
 * main_function_integration
-    - main.ipy - Tweet time series analysis
+    - main.ipynb - Tweet time series analysis
 * PeaceViolencePredictor.ipynb - Predict violence using images of protests.
+
+Other notebooks and files:
 * violenceClassifier.ipynb - Train a model to classify violent vs. peaceful images
-* ...
+* tweets_visualization.ipynb - Preprocess text and make wordclouds for a protest
+* Tweets_sentiment_wordclouds.ipynb - Preprocess text and make wordclouds for low and high sentiment tweets
+* trained_classifier
+    - export.pkl - Trained image classifier (peaceful vs violent)
+
 
 
 ## Microsoft tools
