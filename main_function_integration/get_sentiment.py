@@ -109,7 +109,7 @@ def score_sentiment(filename):
 
 ####### change it below #######
        
-    tweets = pd.read_csv(filename,error_bad_lines=False)
+    tweets = pd.read_csv(filename, index_col = 0, error_bad_lines=False)
    
    # binary indicator of whether the tweet was a retweet
    # tweets['retweet'] = tweets['text'].apply(lambda x: re.sub(r'Retweeted.*\):','',x))

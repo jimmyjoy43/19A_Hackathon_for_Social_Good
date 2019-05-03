@@ -1,4 +1,6 @@
 query,start_time,end_time,end_id,filename
+#OperacionLibertad  -filter:retweets,2019-05-03 13:23:39+00:00,2019-05-03 14:57:53+00:00,1124327223102668802,tweet_files/search_results_2019-05-03T14_57_53+00_00.txt
+#OperacionLibertad  -filter:retweets,2019-05-02 12:46:49+00:00,2019-05-03 13:45:06+00:00,1124308907084668929,tweet_files/search_results_2019-05-03T13_45_06+00_00.txt
 #OperacionLibertad  -filter:retweets,2019-05-02 12:46:49+00:00,2019-05-03 13:41:11+00:00,1124307920890597377,tweet_files/search_results_2019-05-03T13_41_11+00_00.txt
 #OperacionLibertad  -filter:retweets,2019-05-02 12:46:49+00:00,2019-05-03 13:40:05+00:00,1124307641537265667,tweet_files/search_results_2019-05-03T13_40_05+00_00.txt
 #OperacionLibertad  -filter:retweets,2019-05-02 12:46:49+00:00,2019-05-03 13:33:53+00:00,1124306084083183618,tweet_files/search_results_2019-05-03T13_33_53+00_00.txt
@@ -40,4 +42,4 @@ query,start_time,end_time,end_id,filename
 #1May -filter:retweets,2019-05-01 20:12:46+00:00,2019-05-01 20:54:00+00:00,1123692067895500800,tweet_files/search_results_2019-05-01T20_54_00+00_00.txt
 #1May -filter:retweets,2019-05-01 20:12:46+00:00,2019-05-01 20:48:44+00:00,1123690740213796865,tweet_files/search_results_2019-05-01T20_48_44+00_00.txt
 #1May -filter:retweets,2019-05-01 20:12:46+00:00,2019-05-01 20:46:06+00:00,1123690079506128898,tweet_files/search_results_2019-05-01T20_46_06+00_00.txt
-#OperacionLibertad  -filter:retweets,2019-05-02 12:46:49+00:00,2019-05-03 13:45:06+00:00,1124308907084668929,tweet_files/search_results_2019-05-03T13_45_06+00_00.txt
+#OperacionLibertad  -filter:retweets,2019-05-02 12:46:49+00:00,2019-05-03 14:57:53+00:00,1124327223102668802,tweet_files/search_results_2019-05-03T14_57_53+00_00.txt
