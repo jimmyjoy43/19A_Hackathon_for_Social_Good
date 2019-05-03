@@ -47,7 +47,9 @@ gnu parallel (>= version 20160822)
 
 Important files for users:
 
-* main_function_integration - Tweet time series analysis
+* main_function_integration
+    - main.ipy - Tweet time series analysis
+* PeaceViolencePredictor.ipynb - Predict violence using images of protests.
 * violenceClassifier.ipynb - Train a model to classify violent vs. peaceful images
 * ...
 
