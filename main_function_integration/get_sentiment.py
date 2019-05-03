@@ -108,7 +108,7 @@ def score_sentiment(filename):
         return (seq[pos:pos + size].copy() for pos in range(0, len(seq), size))
 
 ####### change it below #######
-    all_tweets = []    
+       
     tweets = pd.read_csv(filename,error_bad_lines=False)
    
    # binary indicator of whether the tweet was a retweet
@@ -121,19 +121,20 @@ def score_sentiment(filename):
     chunk_dfs = []
 
     for i in chunker(tweets,500):
-        time.sleep(10)
+        
         chunk_dfs.append(language_and_sentiment(i))
+        time.sleep(5)
 
     tweets_with_sent = pd.concat(chunk_dfs)
-    all_tweets.append(tweets_with_sent)
+    
 
     filename = filename.split('/')[1]
     filename = filename.split('.')[0]
     
-    final = pd.concat(all_tweets)
+    
     save_path = 'sentiment_csvs/'
     save_file = (save_path + str(filename) + 'sent.csv')
 
-    final.to_csv(save_file)
+    tweets_with_sent.to_csv(save_file)
     return final
 
